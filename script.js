@@ -16,11 +16,11 @@ function LinkedList() {
       while (current.next) {
         current = current.next;
       }
-      const node = new ListNode();
+      const node = ListNode();
       node.value = value;
       current.next = node;
     } else {
-      const node = new ListNode();
+      const node = ListNode();
       node.value = value;
       list.head = node;
     }
@@ -31,12 +31,12 @@ function LinkedList() {
     let head = list.head;
     if (head) {
       let temp = list.head;
-      const node = new ListNode();
+      const node = ListNode();
       node.value = value;
       node.next = temp;
       list.head = node;
     } else {
-      const node = new ListNode();
+      const node = ListNode();
       node.value = value;
       list.head = node;
     }
@@ -134,12 +134,12 @@ function LinkedList() {
       }
       if (index === 0) {
         const temp = list.head;
-        const node = new ListNode();
+        const node = ListNode();
         node.value = value;
         node.next = temp;
         list.head = node;
       } else if (index <= count) {
-        const node = new ListNode();
+        const node = ListNode();
         node.value = value;
         node.next = current;
         previous.next = node;
